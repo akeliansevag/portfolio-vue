@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: portfolio-vue:latest
+    ports:
+      - 3000:3000
+    volumes:
+      - node_modules:/frontend/node_modules
+      - nuxt:/fronted/.nuxt
+      - /home/sevag/portfolio-vue:/frontend
+volumes:
+  node_modules: {}
+  nuxt: {}
